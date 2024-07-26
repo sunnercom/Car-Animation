@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.sky{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(32, 1, 103);
+    position: relative;
+}
+.moon{
+    background: #b1b0b0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+    top: 60px;
+    left: 1000px;
+    animation-name: moon-anim;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.road {
+    background-color: #000;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    font-size: 30px;
+}
+
+@keyframes moon-anim {
+    from{
+
+    }
+    to{
+        rotate: 360deg;
+        background: #e3e1e1;
+    }
+}
+
+.car {
+    position: absolute;
+    left: 20px;
+}
+.wheel {
+    position: absolute;
+    left: 39px;
+    bottom: 111px;
+    animation-name: wheel;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes wheel {
+    from{
+
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+
+.wheel_two {
+    position: absolute;
+    left: 120px;
+    bottom: 111px;
+    animation-name: wheel-two;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wheel-two {
+    from{
+
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+
+.rocar {
+    animation-name: roads;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    gap: 90px;
+    position: relative;
+
+}
+
+@keyframes roads {
+    from{
+
+    }
+    to{
+        transform: translateX(1600px);
+    }
+}
